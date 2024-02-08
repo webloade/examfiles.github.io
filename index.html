@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Blog Theme</title>
+    <style type="text/css">
+        /* Base styles */
+        body {
+            background: #aba;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            font: 16px/1.5 "Trebuchet MS", Verdana, Arial, Sans-serif;
+            color: #333;
+        }
+
+        /* Container for main content and sidebar */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Styles for main content */
+        .content {
+            background: #fff;
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: left;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles for sidebar */
+        .sidebar {
+            background: #fff;
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: left;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        #footer {
+            background: #456;
+            color: #fff;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-wrap: nowrap;
+            }
+            .content {
+                width: calc(70% - 20px);
+                margin-right: 20px;
+            }
+            .sidebar {
+                width: calc(30% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <h1>Mobile Responsive Blog</h1>
+        <p>Welcome to the mobile-responsive blog theme</p>
+    </div>
+
+    <!-- Container for main content and sidebar -->
+    <div class="container">
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Sample Post -->
+            <div class="post">
+                <h2 class="post-title">Sample Post Title</h2>
+                <div class="post-body">
+                    <p>This is a sample blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <p class="post-footer">
+                    <em>Posted by Admin @ <a href="#">January 1, 2024</a></em>
+                </p>
+            </div>
+            <!-- End Sample Post -->
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-title">Links</div>
+            <ul>
+                <li><a href="https://news.google.com/">Google News</a></li>
+                <li><a href="#">Edit-Me</a></li>
+                <li><a href="#">Edit-Me</a></li>
+            </ul>
+            <div class="sidebar-title">Previous Posts</div>
+            <ul>
+                <li><a href="#">Sample Post 1</a></li>
+                <li><a href="#">Sample Post 2</a></li>
+                <li><a href="#">Sample Post 3</a></li>
+            </ul>
+            <div class="sidebar-title">Archives</div>
+            <ul>
+                <li><a href="#">January 2024</a></li>
+                <li><a href="#">February 2024</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        This is a mobile-responsive blog theme. &copy; 2024 Mobile Responsive Blog. All rights reserved.
+    </div>
+
+</body>
+
+</html>
